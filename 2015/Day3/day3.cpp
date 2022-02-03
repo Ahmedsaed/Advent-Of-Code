@@ -1,23 +1,27 @@
+/*
+Check the python answer in day3.py
+*/
+
 #include <iostream>
 #include <fstream>
-#include <vector>
 #include <set>
+#include <string>
 
 using namespace std;
 
 int main()
 {
     ifstream inData;
-    set<tuple<int, int>> position;
+    set<string> positions;
     int  count = 0, x = 0, y = 0;
     char ch;
+    string position = "00";
 
     inData.open("input.txt");
 
-    tuple <int, int, int> position;
-    position = make_tuple(0, 0, 0);
+    positions.insert(position);
 
-    position.insert(position);
+    while (inData)
     {
         inData >> ch;
         if (ch == '>')
@@ -29,8 +33,11 @@ int main()
         else if (ch == 'v')
             y--;
 
-        position.insert(make_tuple(x , y));
+        position[0] = x;
+        position[1] = y;
+
+        positions.insert(position);
     }
     
-    cout << position.size();
+    cout << positions.size();
 }
