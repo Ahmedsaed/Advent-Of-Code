@@ -1,6 +1,4 @@
-/*
-    code by adham asm
-*/
+// code by adham asm
 
 #include <iostream>
 #include <fstream>
