@@ -16,9 +16,9 @@ int main() {
     {
         incrementPassword(password, password.length() - 1);
 
-        cout << "Checking: " << password << '\n';
+        // cout << "Checking: " << password << '\n';
         if (noConfusingCharacters(password) && threeStraightletters(password) && twoCharPairs(password)) {
-            cout << "Part 1: " << password;
+            cout << "Part 2: " << password;
             break;
         }
     }
