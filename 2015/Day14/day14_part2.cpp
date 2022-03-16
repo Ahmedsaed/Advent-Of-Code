@@ -42,7 +42,7 @@ int main() {
         {
             if (reindeers[i].restLast > race_length) {
                 reindeers[i].totalDistance += reindeers[i].speed;
-                // reindeers[i].score += reindeers [i].speed;\
+                // reindeers[i].score += reindeers [i].speed;
                 if (reindeers[i].totalDistance % (reindeers[i].speed * reindeers[i].moveDuration) == 0)
                     reindeers[i].restLast = race_length - reindeers[i].restDuration;
             }
