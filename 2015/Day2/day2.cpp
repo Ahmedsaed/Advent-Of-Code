@@ -7,8 +7,6 @@ using namespace std;
 int main()
 {
     ifstream inData;
-    ofstream outFile;
-    outFile.open("out.txt");
     char ch;
     int l = 0, w = 0, h = 0;
     long tarea = 0, tribbon = 0;
