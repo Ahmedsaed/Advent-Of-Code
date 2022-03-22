@@ -1,6 +1,6 @@
 niceStrings = 0
 
-with open("2015\Day5\input.txt") as input:
+with open("Day5/input.txt") as input:
     lines = input.readlines()
 
     for i, line in enumerate(lines):

@@ -18,7 +18,7 @@ def checkNice(string):
 
 	return False
 
-with open("2015\Day5\input.txt") as input:
+with open("/home/ahmed/Documents/Advent-Of-Code/2015/Day5/input.txt") as input:
     lines = input.readlines()
 
     for i, line in enumerate(lines):
